@@ -27,4 +27,11 @@ Enter the length of side c: 12
 Your half perimeter is 14.5
 The area of your triangle is 29.342
 '''
+A = int(input("Give me the number for side A , then press enter:"))
+B = int(input( "Give me the number for side B, then press enter:"))
+C = int (input( "Give me the number for side C, then press enter:"))
+s = (A + B + C)/2
+Area = (s * (s-A) * (s-B) * ( s-C)) ** (1/2)
 
+print(f"SEMI PERIMETER: {s}")
+print(f"AREA: {Area}")

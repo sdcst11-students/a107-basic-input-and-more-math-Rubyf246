@@ -18,3 +18,16 @@ Enter actual : 14
 The percent difference is 16.67%
 ```
 '''
+
+
+a = "Give me the expected number, then press enter."
+answerF = input(a)
+c = "Give me the actual number, then press enter and see the result"
+answerT = input (c)
+Fanswer = int(answerF)
+Tanswer = int(answerT)
+increase = Tanswer - Fanswer
+equation = increase / Fanswer * 100
+x = round(equation , 2)
+print(f"x: {x}")
+

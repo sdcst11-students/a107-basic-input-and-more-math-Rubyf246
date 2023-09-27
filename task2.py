@@ -24,3 +24,15 @@ Your final amount is $39152.94
 You earned $14152.94 interest
 ```
 '''
+Principal = int(input("Give me principal number, then press enter:"))
+Intrate = int(input( "Give the the percentage of your interest rate:"))
+Compperyear = int (input( "Give me the number of compounding periods per year:"))
+Time = int (input ("Give me the time for the inveestment:")) 
+PIntrate = Intrate / 100
+equation = Principal*(1 + PIntrate/Compperyear) ** (Compperyear * Time)
+Final_amount = round(equation , 2)
+Earned = Final_amount - Principal 
+Searned = round(Earned , 2)
+print(f"Final amount: {Final_amount}")
+print(f"Earned: {Searned}")
+
