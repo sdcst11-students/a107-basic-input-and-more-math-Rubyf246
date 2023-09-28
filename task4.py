@@ -15,3 +15,8 @@ Enter a length in centimeters: 32
 32 centimeters is 1 feet and 1 inches
 ```
 """
+Length = int(input("Give me the length number in centimeters, then press enter:"))
+inches = Length/ 2.54 
+feet = Length/  30.48
+print(f"Inches: {inches}")
+print(f"Feets: {feet}")
